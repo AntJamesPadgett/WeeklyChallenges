@@ -15,7 +15,7 @@ namespace ChallengesWithTestsMark8.Tests
         [InlineData(4, 7, false)]
         [InlineData(-1, 1, false)]
         [InlineData(5, 6, false)]
-        public void AreTwoNumbersTheSame(int number1, int number2, bool expected)
+        public void c      (int number1, int number2, bool expected)
         {
             // Arrange
             ChallengesSet01 challenger = new ChallengesSet01();
