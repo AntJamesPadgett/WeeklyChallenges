@@ -32,7 +32,34 @@ namespace ChallengesWithTestsMark8
 
         public bool PasswordContainsUpperLowerAndNumber(string password)
         {
-            throw new NotImplementedException();
+            var isLower = false;
+            var isUpper = false;
+            var isNumber = false;
+
+            for (int i = 0; i < password.Length; i++)
+            {
+                if (char.IsLower(password[i]))
+                {
+                    isLower = true;
+                }
+                if (char.IsUpper(password[i]))
+                {
+                    isUpper = true;
+                }
+                if (char.IsNumber(password[i]))
+                {
+                    isNumber = true;
+                }
+            }
+
+            if (isLower && isUpper == true && isNumber == true)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public char GetFirstLetterOfString(string val)
