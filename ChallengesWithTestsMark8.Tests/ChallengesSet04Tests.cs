@@ -4,7 +4,47 @@ using Xunit;
 namespace ChallengesWithTestsMark8.Tests
 {
     public class ChallengesSet04Tests
-    {
+    {<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(@1 Namespace=ChallengesWithTestsMark8.Tests Type=ChallengesSet04Tests Member=(Name=AddEvenSubtractOdd OverloadingParameters=[(@2 Namespace=System Type=(Name=Int32 ArrayRank=1 ParentType=Int32)),(@2 Namespace=System Type=Int32)]))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CommonLabel="AddEvenSubtractOdd" Icon="Microsoft.VisualStudio.Method.Public" IsDragSource="True" Label="AddEvenSubtractOdd(int[], int) : void" SourceLocation="(Assembly=file:///C:/Users/antho/repos/WeeklyChallenges/ChallengesWithTestsMark8.Tests/ChallengesSet04Tests.cs StartLineNumber=15 StartCharacterOffset=20 EndLineNumber=15 EndCharacterOffset=38)" />
+    <Node Id="(@1 Namespace=ChallengesWithTestsMark8.Tests Type=ChallengesSet04Tests)" Visibility="Hidden" />
+  </Nodes>
+  <Links>
+    <Link Source="(@1 Namespace=ChallengesWithTestsMark8.Tests Type=ChallengesSet04Tests)" Target="(@1 Namespace=ChallengesWithTestsMark8.Tests Type=ChallengesSet04Tests Member=(Name=AddEvenSubtractOdd OverloadingParameters=[(@2 Namespace=System Type=(Name=Int32 ArrayRank=1 ParentType=Int32)),(@2 Namespace=System Type=Int32)]))" Category="Contains" />
+  </Links>
+  <Categories>
+    <Category Id="CodeSchema_Member" Label="Member" Icon="CodeSchema_Field" />
+    <Category Id="CodeSchema_Method" Label="Method" BasedOn="CodeSchema_Member" Icon="CodeSchema_Method" />
+    <Category Id="Contains" Label="Contains" Description="Whether the source of the link contains the target object" IsContainment="True" />
+  </Categories>
+  <Properties>
+    <Property Id="CodeSchemaProperty_IsPublic" Label="Is Public" Description="Flag to indicate the scope is Public" DataType="System.Boolean" />
+    <Property Id="CommonLabel" DataType="System.String" />
+    <Property Id="Icon" Label="Icon" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="IsDragSource" Label="IsDragSource" Description="IsDragSource" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="SourceLocation" Label="Start Line Number" DataType="Microsoft.VisualStudio.GraphModel.CodeSchema.SourceLocation" />
+    <Property Id="Visibility" Label="Visibility" Description="Defines whether a node in the graph is visible or not" DataType="System.Windows.Visibility" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="ArrayRank" Label="Array Rank" ValueType="System.String" />
+    <Name Id="Assembly" Label="Assembly" ValueType="Uri" />
+    <Name Id="Member" Label="Member" ValueType="System.Object" />
+    <Name Id="Name" Label="Name" ValueType="System.String" />
+    <Name Id="Namespace" Label="Namespace" ValueType="System.String" />
+    <Name Id="OverloadingParameters" Label="Parameter" ValueType="Microsoft.VisualStudio.GraphModel.GraphNodeIdCollection" Formatter="NameValueNoEscape" />
+    <Name Id="ParentType" Label="Parent Type" ValueType="System.Object" />
+    <Name Id="Type" Label="Type" ValueType="System.Object" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=$(5f6edb8f-2166-447c-baca-784679ac4459.OutputPathUri)" />
+    <Alias n="2" Uri="Assembly=file:///C:/Users/antho/.nuget/packages/microsoft.netcore.app/2.1.0/ref/netcoreapp2.1/System.Runtime.dll" />
+  </IdentifierAliases>
+  <Paths>
+    <Path Id="5f6edb8f-2166-447c-baca-784679ac4459.OutputPathUri" Value="file:///C:/Users/antho/repos/WeeklyChallenges/ChallengesWithTestsMark8.Tests/bin/Debug/netcoreapp2.1/ChallengesWithTestsMark8.Tests.dll" />
+  </Paths>
+</DirectedGraph>
         [Theory]
         [InlineData(new int[] { 2, 6, 8, 3, 1, 3 }, 9)]
         [InlineData(new int[] { 4, 6, 10 }, 20)]
